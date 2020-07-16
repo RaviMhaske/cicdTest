@@ -1,0 +1,16 @@
+pipelines {
+  agent any 
+  stages {
+    stage ("code fetch"){
+      steps{
+        echo "fetch code"
+      }
+    }
+    stage ("compile"){
+      steps{
+        echo "compiling stage"
+      }
+    }
+  }
+
+}
